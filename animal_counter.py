@@ -10,8 +10,8 @@ from code_puppy.tools.common import console
 PROMPT = (Path(__file__).parent / "cow_prompt.md").read_text()
 
 
-class CowAgent(BaseAgent):
-    name = "cow-agent"
+class AnimalCounter(BaseAgent):
+    name = "AnimalCounter"
     display_name = "🐄👁️ Bessie the CV Cow"
     description = "OpenCV expert that counts animals in images"
 
@@ -36,7 +36,7 @@ async def main():
     console.print(
         "[bold cyan]🐄👁️ Bessie the CV Cow[/bold cyan] [dim](claude-sonnet-4-5)[/dim]\n"
     )
-    cow = CowAgent()
+    cow = AnimalCounter()
 
     if len(sys.argv) > 1:
         console.print(f"[green]You:[/green] {' '.join(sys.argv[1:])}\n")
