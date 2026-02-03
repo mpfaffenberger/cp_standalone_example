@@ -1,6 +1,6 @@
-"""Tests for CowAgent."""
+"""Tests for animal_counter."""
 
-from cow_agent import CowAgent
+from animal_counter import CowAgent
 from code_puppy.agents.base_agent import BaseAgent
 
 

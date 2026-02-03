@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""🐄 Bessie the CV Cow - Requires ANTHROPIC_API_KEY environment variable."""
+"""🐄👁️ Bessie the CV Cow - Requires ANTHROPIC_API_KEY environment variable."""
 
 import asyncio
 import sys
@@ -48,7 +48,7 @@ async def main():
         console.print("[dim]Interactive mode. 'quit' to exit.[/dim]\n")
         while True:
             try:
-                p = input("You: ").strip()
+                p = input("Prompt (example: Count elk in Elk-Count.jpg) >>> ").strip()
                 if not p:
                     continue
                 if p.lower() in ("quit", "exit", "q"):
@@ -67,7 +67,6 @@ async def main():
 
 
 def cli_main():
-    """CLI entry point for the cow-agent command."""
     asyncio.run(main())
 
 
