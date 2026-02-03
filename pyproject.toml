@@ -1,0 +1,24 @@
+[project]
+name = "cow-agent-example"
+version = "0.1.0"
+description = "🐄 A moo-velous OpenCV animal counting agent built on code-puppy"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Mike", email = "mike@example.com" }
+]
+
+dependencies = [
+    "code-puppy==0.0.387",
+]
+
+[project.scripts]
+cow-agent = "cow_agent:cli_main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
